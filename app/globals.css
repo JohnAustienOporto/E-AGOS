@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-blue: #2a4b7c;
+  --light-blue: #a3c4d3;
+  --teal: #5f9ea0;
+  --teal-dark: #4a8486;
+  --soft-white: #f8f9fa;
+}
+
+body {
+  background-color: var(--soft-white);
+  color: #333;
+  font-family: var(--font-open-sans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), serif;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--teal);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-dark);
+}
+
+.section-divider {
+  background-color: var(--light-blue);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid var(--light-blue);
+}
+
+.card-header {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Parallax effect */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%; /* Extra height for parallax effect */
+  z-index: 0;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
