@@ -107,7 +107,18 @@ export default function ImageModalGallery({
       {/* Image info */}
       <div className="text-white max-w-4xl w-full">
         <h3 className="text-xl font-bold mb-2">{current.alt}</h3>
-        {current.description && <p className="text-gray-300">{current.description}</p>}
+
+        {current.description && (
+          <a
+            href={current.description}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal hover:underline block break-words text-sm"
+          >
+            {current.description}
+          </a>
+        )}
+
         <p className="text-gray-400 text-sm mt-2">
           {currentIndex + 1} ng {images.length}
         </p>

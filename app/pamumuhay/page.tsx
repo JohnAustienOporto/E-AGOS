@@ -1,12 +1,37 @@
+import GalleryButton from "@/components/gallery-button"
 import ParallaxHero from "@/components/parallax-hero"
 import Image from "next/image"
 
 export default function Pamumuhay() {
+
+  const pagbabangkaImages = [
+    {
+      src: "/images/pamumuhay/PAGBABANGKA.jpg",
+      alt: "Pagbabangka sa Ilog Daet",
+    },
+    {
+      src: "/images/pamumuhay/b1.jpg",
+      alt: "Bangka sa ilog",
+    },
+    {
+      src: "/images/pamumuhay/b2.jpg",
+      alt: "Pagbabangka ng mga residente",
+    },
+    {
+      src: "/images/pamumuhay/b3.jpg",
+      alt: "Pagbabangka ng mga residente",
+    },
+    {
+      src: "/images/pamumuhay/MtoD.png",
+      alt: "Pagbabangka ng mga residente",
+    },
+  ]
+
   return (
     <div className="bg-softWhite">
       {/* Header with Parallax */}
       <ParallaxHero
-        imageUrl="/images/ilog-daet-3.png"
+        imageUrl="/images/pamumuhay/MtoD.png"
         height="400px"
         title="Pamumuhay"
         subtitle="Pang-araw-araw na buhay ng mga naninirahan sa tabi ng Ilog Daet"
@@ -47,7 +72,7 @@ export default function Pamumuhay() {
                     <h3 className="text-xl font-bold text-white">Pangingisda</h3>
                   </div>
                   <div className="relative h-64">
-                    <Image src="/images/pangingisda.png" alt="Pangingisda sa Ilog Daet" fill className="object-cover" />
+                    <Image src="/images/pamumuhay/PANGINGISDA.jpg" alt="Pangingisda sa Ilog Daet" fill className="object-cover" />
                   </div>
                   <div className="p-6">
                     <p>
@@ -132,7 +157,7 @@ export default function Pamumuhay() {
                   <div className="p-6">
                     <p>
                       Ang kawayan ay isang mahalagang halaman sa tabi ng ilog na ginagamit sa pagpapagawa ng bahay,
-                      muwebles, at iba pang kagamitan. Ito rin ay nakatutulong sa pagpigil ng soil erosion sa tabi ng
+                      muwebles, at iba pang kagamitan. Ito rin ay nakatutulong sa pagpigil nang pagguho ng lupa sa tabi ng
                       ilog.
                     </p>
                   </div>
@@ -142,7 +167,7 @@ export default function Pamumuhay() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="card">
                   <div className="card-header">
-                    <h3 className="text-xl font-bold text-white">Pagde-deliver ng Buhangin</h3>
+                    <h3 className="text-xl font-bold text-white">Pangongontrata ng Buhangin</h3>
                   </div>
                   <div className="relative h-64">
                     <Image
@@ -213,6 +238,27 @@ export default function Pamumuhay() {
                 </div>
 
                 <div className="card">
+                <div className="card-header">
+                  <h3 className="text-xl font-bold text-white">Pagbabangka</h3>
+                </div>
+                <div className="relative h-64">
+                  <Image
+                    src="/images/pamumuhay/PAGBABANGKA.jpg"
+                    alt="Pagbabangka"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <p>
+                    Nagagamit na transportasyon bilang daanan ng mga bangka patungong bayan ng Mercedes at Daet, na nagpapadali sa pamumuhay, kalakalan, at nagpapabuti sa kabuhayan ng mga naninirahan sa paligid nito.
+                  </p>
+                  <GalleryButton images={pagbabangkaImages} />
+                </div>
+              </div>
+
+
+                <div className="card">
                   <div className="card-header">
                     <h3 className="text-xl font-bold text-white">Pagawaan ng Hollow Blocks</h3>
                   </div>
@@ -233,20 +279,53 @@ export default function Pamumuhay() {
                 </div>
               </div>
 
-              <div className="card mb-8">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="card">
                 <div className="card-header">
-                  <h3 className="text-xl font-bold text-white">Paglilikas tuwing may bagyo</h3>
+                  <h3 className="text-xl font-bold text-white">Pagtatanim ng Saging</h3>
                 </div>
                 <div className="relative h-64">
-                  <Image src="/images/paglikas.jpg" alt="Paglilikas tuwing may bagyo" fill className="object-cover" />
+                  <Image
+                    src="/images/pamumuhay/saging.jpg"
+                    alt="Pagtatanim ng Saging"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <p>
-                    Isang mahalagang hakbang na isinasagawa ng mga tao upang masiguro ang kanilang kaligtasan tuwing may
-                    banta ng malalakas na bagyo at pagbaha.
-                  </p>
+                  pagtatanim ng saging - saging na kanilang pinakikinabangan sa kanilang pagkain sa pang-araw-araw na pamumuhay sa kanilang barangay. Maliban dito, nagsisilbi rin pangunahing pinagkukunan ng kanilang kabuhayan, sapagkat naibebenta nila ang kanilang ani sa mga kalapit na pamilihan.                  </p>
                 </div>
               </div>
+            </div>
+
+
+              
+
+                      <div className="card mb-8">
+            <div className="card-header">
+              <h3 className="text-xl font-bold text-white">Paglilikas tuwing may bagyo</h3>
+            </div>
+            <div className="relative h-64">
+              <Image src="/images/paglikas.jpg" alt="Paglilikas tuwing may bagyo" fill className="object-cover" />
+            </div>
+            <div className="p-6">
+              <p>
+                Isang mahalagang hakbang na isinasagawa ng mga tao upang masiguro ang kanilang kaligtasan tuwing may
+                banta ng malalakas na bagyo at pagbaha.
+              </p>
+              <a
+                href="https://images.app.goo.gl/W8aBt6dgx6rUEH2y5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline mt-4 inline-block"
+              >
+                Tingnan ang larawan
+              </a>
+            </div>
+          </div>
+
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="relative h-64 rounded-lg overflow-hidden">

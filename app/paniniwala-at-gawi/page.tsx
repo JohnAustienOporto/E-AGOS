@@ -168,13 +168,13 @@ export default function PaniniwalAtGawi() {
       src: "/images/tirador.jpg",
       alt: "Batang gumagamit ng tirador",
       description:
-        "Isang batang mag-aaral na gumagamit ng tirador, isang tradisyonal na kasangkapan na ginagamit sa pagtitiradoran.",
+        "https://images.app.goo.gl/oAED4W4SDTN4e1zo7",
     },
     {
       src: "/images/tirador1.jpg",
       alt: "Tradisyonal na tirador",
       description:
-        "Isang tradisyonal na tirador na gawa sa kahoy at goma, ginagamit sa pagtitiradoran at pangangaso ng maliliit na hayop.",
+        "https://images.app.goo.gl/smt7M32MwRg31eNJ8.",
     },
   ]
 
@@ -183,7 +183,7 @@ export default function PaniniwalAtGawi() {
       src: "/images/pagbabanlawpinetensya.jpg",
       alt: "Pagbanlaw ng mga nagpipenitensya sa ilog",
       description:
-        "Mga tao na nagsasagawa ng ritwal ng penitensya sa pamamagitan ng pagbanlaw sa ilog, isang tradisyonal na gawain tuwing Semana Santa.",
+        "https://www.facebook.com/share/1AKtLfxLLR/",
     },
   ]
 
@@ -192,7 +192,7 @@ export default function PaniniwalAtGawi() {
       src: "/images/pagtatalon.jpg",
       alt: "Mga kabataan na tumataglon mula sa tulay",
       description:
-        "Mga kabataan na tumataglon mula sa tulay patungo sa ilog, isang karaniwang libangan sa mga lugar na malapit sa ilog.",
+        "https://www.facebook.com/share/163Au2hquE/",
     },
   ]
 
@@ -201,7 +201,7 @@ export default function PaniniwalAtGawi() {
       src: "/images/bayanihan.jpg",
       alt: "Bayanihan sa panahon ng pangangailangan",
       description:
-        "Mga tao na nagtutulungan sa panahon ng pangangailangan, nagpapakita ng diwa ng bayanihan sa mga komunidad sa tabi ng ilog.",
+        "https://www.google.com/imgres?imgurl=https://philippinerevolution.nu/wp-content/uploads/2023/06/photo-from-the-national-fb-page-mayon-evacuation.jpg&tbnid=kcuuC2Kj-aClwM&vet=1&imgrefurl=https://philippinerevolution.nu/angbayan/bhb-albay-handang-tumugon-sa-sakuna-ng-pagsabog-ng-bulkang-mayon/&docid=P2mMaUilEOrqTM&w=2048&h=1536&itg=1&source=sh/x/im/m1/1&kgs=bb897bd7482bfa91",
     },
   ]
 
@@ -264,6 +264,58 @@ export default function PaniniwalAtGawi() {
       description: "Tanawin ng pampang ng Ilog Daet sa Barangay VIII, ipinapakita ang natural na kapaligiran.",
     },
   ]
+  const pagtutuliImages = [
+    {
+      src: "/images/NAGTUTULI.jpg",
+      alt: "Pagbabad sa ilog bago tuliin",
+    },
+
+  ];
+
+  const paglalabaImages = [
+    {
+      src: "/images/gawi/laba.jpg",
+      alt: "Paglalaba sa Ilog",
+    },
+    {
+      src: "/images/gawi/laba2.jpg",
+      alt: "Paglalaba sa Ilog",
+      description: "https://www.facebook.com/photo/?fbid=814143218978064&set=a.569367390122316",
+    },
+  ]
+
+  const pagliligoImages = [
+    {
+      src: "/images/gawi/ligo.png",
+      alt: "Pagliligo sa Ilog",
+    },
+    {
+      src: "/images/gawi/ligo2.jpg",
+      alt: "Pagliligo sa Ilog",
+      description: "https://www.google.com/imgres?imgurl=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWjlqw5MjM0sGC1ZcmeNGLCynX6njlSoLC24WKFOCuIA8ZdRGI4424y38ggXTEA2B2kg9YKm4aOKvrZKECnPSXzqByGD_mSKelsIxvMTY8ln4A9SZkk8dopLyMQoq-UZ8YKjN3P46baRA/s1600/04082010(011).jpg&tbnid=CXUCi1oc_wKv4M&vet=1&imgrefurl=http://asiong32.blogspot.com/2010/08/ligo-sa-ilog.html&docid=DXg6pGGNFdZChM&w=1600&h=1200&source=sh/x/im/m1/1&kgs=e873620fca4ed3cf",
+    },
+  ]
+
+  const pagbabangkaImages = [
+    {
+      src: "/images/pamumuhay/PAGBABANGKA.jpg",
+      alt: "Pagbabangka sa Ilog",
+    },
+  ]
+
+  const balsaImages = [
+    {
+      src: "/images/pamumuhay/saging.jpg",
+      alt: "Paggawa ng Balsa gamit ang katawan ng puno ng saging",
+    },
+  ]
+  
+  
+  
+  
+   
+  
+  
 
   return (
     <div className="bg-softWhite">
@@ -596,6 +648,244 @@ export default function PaniniwalAtGawi() {
                   </div>
                 </div>
 
+                            <div className="card h-full">
+              <div className="card-header">
+                <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+              </div>
+              <div
+                className="relative h-64 cursor-pointer overflow-hidden"
+                onClick={() => document.getElementById("open-naglalaro-gallery")?.click()}
+              >
+                <Image
+                  src="/images/naglalaro-mga-bata.png"
+                  alt="Mga Batang Naglalaro sa Ilog"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+                  <span className="sr-only">Buksan ang gallery</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-bold mb-2 text-darkBlue">Paglalaro ng mga Bata</h4>
+                <p className="mb-4">
+                  Isa sa mga karaniwang gawi ng mga bata sa mga pamayanang malapit sa ilog. Dito sila
+                  nagkakaroon ng pagkakataong makisalamuha sa isa't isa, magsaya, at matuto mula sa kalikasan.
+                </p>
+                <button
+                  id="open-naglalaro-gallery"
+                  className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+                >
+                  <GalleryButton images={naglalaroImages} label="Tingnan ang mga imahe ng Naglalarong Bata" />
+                </button>
+              </div>
+            </div>
+
+            <div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-bingwit-gallery")?.click()}
+  >
+    <Image
+      src="/images/bingwit-1.png"
+      alt="Pangingisda sa Ilog Daet"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Pamamana o Bingwit</h4>
+    <p className="mb-4">
+      Isang tradisyunal na paraan ng pangingisda, kung saan ang mga tao ay gumagamit ng mga
+      panghuhuli upang makakuha ng isda para sa kanilang pang-araw-araw na pagkain.
+    </p>
+    <button
+      id="open-bingwit-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={bingwitImages} label="Tingnan ang mga imahe ng Pangingisda" />
+    </button>
+  </div>
+</div>
+
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-pagtutuli-gallery")?.click()}
+  >
+    <Image
+      src="/images/NAGTUTULI.jpg" // replace this with your actual image
+      alt="Pagtutuli o Pagbabad"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Pagtutuli o Pagbabad</h4>
+    <p className="mb-4">
+      Isang kaugalian na isinasagawa ng mga batang lalaki bilang bahagi ng kanilang pagdapo sa pagtanda,
+      kadalasang sinasamahan ng mga ritwal.
+    </p>
+    <button
+      id="open-pagtutuli-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={pagtutuliImages} label="Tingnan ang imahe ng Pagtutuli" />
+    </button>
+  </div>
+</div>
+
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-paglalaba-gallery")?.click()}
+  >
+    <Image
+      src="/images/gawi/laba.jpg" // Replace this with your actual image
+      alt="Paglalaba sa Ilog"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Paglalaba</h4>
+    <p className="mb-4">
+      Karaniwang gawain ng mga kababaihan sa tabi ng ilog, ginagamit ang daloy ng tubig para sa
+      paghuhugas ng mga damit at iba pang kasuotan.
+    </p>
+    <button
+      id="open-paglalaba-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={paglalabaImages} label="Tingnan ang mga imahe ng Paglalaba" />
+    </button>
+  </div>
+</div>
+
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-pagliligo-gallery")?.click()}
+  >
+    <Image
+      src="/images/gawi/ligo.png"
+      alt="Pagliligo sa Ilog"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Pagliligo</h4>
+    <p className="mb-4">
+      Isang mahalagang bahagi ng araw ng mga tao, partikular na sa mainit na panahon, kung saan
+      ginagamit ang ilog bilang lugar ng paglilinis ng sarili.
+    </p>
+    <button
+      id="open-pagliligo-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={pagliligoImages} label="Tingnan ang imahe ng Pagliligo" />
+    </button>
+  </div>
+</div>
+
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-pagbabangka-gallery")?.click()}
+  >
+    <Image
+      src="/images/pamumuhay/PAGBABANGKA.jpg"
+      alt="Pagbabangka sa Ilog"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Pagbabangka</h4>
+    <p className="mb-4">
+      Isang pangunahing paraan ng transportasyon sa tabi ng ilog, ginagamit ito para sa pamamasada o
+      pangingisda, at nakatutulong sa mga tao sa kanilang araw-araw na buhay.
+    </p>
+    <button
+      id="open-pagbabangka-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={pagbabangkaImages} label="Tingnan ang imahe ng Pagbabangka" />
+    </button>
+  </div>
+</div>
+
+
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
+  </div>
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-balsa-gallery")?.click()}
+  >
+    <Image
+      src="/images/pamumuhay/saging.jpg"
+      alt="Paggawa ng Balsa gamit ang katawan ng puno ng saging"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Paggawa ng Balsa gamit ang katawan ng puno ng saging</h4>
+    <p className="mb-4">
+      Ginagamit ang katawan ng puno ng saging bilang materyales upang gumawa ng isang uri ng balsa o sasakyang pang-ilog na magaan at matibay.
+      Ang mga kabataan na naliligo sa ilog Daet ay gumagamit ng mga balsa na ito para sa pagpapaligo at libangan sa mga ilog o daluyan ng tubig.
+    </p>
+    <button
+      id="open-balsa-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={balsaImages} label="Tingnan ang imahe ng Paggawa ng Balsa" />
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
                 <div className="card h-full">
                   <div className="card-header">
                     <h3 className="text-xl font-bold text-white">BARANGAY I, III, IV, VIII, AT SAN ISIDRO</h3>
@@ -625,123 +915,16 @@ export default function PaniniwalAtGawi() {
                       id="open-bayanihan-gallery"
                       className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
                     >
-                      <GalleryButton images={bayanihanImages} label="Tingnan ang mga imahe ng Bayanihan" />
+                      <GalleryButton images={bayanihanImages} label="Tingnan ang imahe ng Bayanihan" />
                     </button>
                   </div>
                 </div>
               </div>
+              
 
-              <div className="section-divider">
-  <h3 className="text-xl font-bold mb-4 text-darkBlue">
-    Iba Pang Gawi sa BARANGAY I, III, IV, VIII, AT SAN ISIDRO
-  </h3>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* Left Column - Reordered */}
-    <div>
-      {/* Moved Paglalaro section with image to top */}
-      <div className="mb-4">
-        <h4 className="font-bold text-darkBlue mb-2">Paglalaro ng mga bata sa tabi ng ilog</h4>
-        <div className="grid grid-cols-1 gap-4">
-          <div
-            className="relative h-48 cursor-pointer overflow-hidden rounded-md"
-            onClick={() => document.getElementById("open-naglalaro-gallery")?.click()}
-          >
-            <Image
-              src="/images/naglalaro-mga-bata.png"
-              alt="Mga Batang Naglalaro sa Ilog"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-              <span className="sr-only">Buksan ang gallery</span>
-            </div>
-          </div>
-          <p>
-            Isa sa mga karaniwang gawi ng mga bata sa mga pamayanang malapit sa ilog. Dito sila
-            nagkakaroon ng pagkakataong makisalamuha sa isa't isa, magsaya, at matuto mula sa kalikasan.
-          </p>
-          <button
-            id="open-naglalaro-gallery"
-            className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors"
-          >
-            <GalleryButton images={naglalaroImages} label="Tingnan ang mga imahe ng Naglalarong Bata" />
-          </button>
-        </div>
-      </div>
 
-      {/* Text-only sections moved below */}
-      <h4 className="font-bold text-darkBlue mb-2">Paglalaba</h4>
-      <p className="mb-4">
-        Karaniwang gawain ng mga kababaihan sa tabi ng ilog, ginagamit ang daloy ng tubig para sa
-        paghuhugas ng mga damit at iba pang kasuotan.
-      </p>
+              
 
-      <h4 className="font-bold text-darkBlue mb-2">Pagliligo</h4>
-      <p className="mb-4">
-        Isang mahalagang bahagi ng araw ng mga tao, partikular na sa mainit na panahon, kung saan
-        ginagamit ang ilog bilang lugar ng paglilinis ng sarili.
-      </p>
-    </div>
-
-    {/* Right Column - Already properly ordered */}
-    <div>
-      <div className="mb-4">
-        <h4 className="font-bold text-darkBlue mb-2">Pamamana o bingwit</h4>
-        <div className="grid grid-cols-1 gap-4">
-          <div
-            className="relative h-48 cursor-pointer overflow-hidden rounded-md"
-            onClick={() => document.getElementById("open-bingwit-gallery")?.click()}
-          >
-            <Image
-              src="/images/bingwit-1.png"
-              alt="Pangingisda sa Ilog Daet"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-              <span className="sr-only">Buksan ang gallery</span>
-            </div>
-          </div>
-          <p>
-            Isang tradisyunal na paraan ng pangingisda, kung saan ang mga tao ay gumagamit ng mga
-            panghuhuli upang makakuha ng isda para sa kanilang pang-araw-araw na pagkain.
-          </p>
-          <button
-            id="open-bingwit-gallery"
-            className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors"
-          >
-            <GalleryButton images={bingwitImages} label="Tingnan ang mga imahe ng Pangingisda" />
-          </button>
-        </div>
-      </div>
-
-      {/* Remaining text sections */}
-      <h4 className="font-bold text-darkBlue mb-2">Pagtutuli o pagbabad bago tuliin</h4>
-      <p className="mb-4">
-        Isang kaugalian na isinasagawa ng mga batang lalaki bilang bahagi ng kanilang pagdapo sa pagtanda,
-        kadalasang sinasamahan ng mga ritwal.
-      </p>
-
-      <div className="mb-4">
-        <h4 className="font-bold text-darkBlue mb-2">Pagbabangka</h4>
-        <p className="mb-4">
-          Isang pangunahing paraan ng transportasyon sa tabi ng ilog, ginagamit ito para sa pamamasada o
-          pangingisda, at nakatutulong sa mga tao sa kanilang araw-araw na buhay.
-        </p>
-      </div>
-
-      <div>
-        <h4 className="font-bold text-darkBlue mb-2">Tanawin</h4>
-        <button
-          id="open-barangay-gallery"
-          className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors"
-        >
-          <GalleryButton images={barangayVIIIImages} label="Tingnan ang mga imahe" />
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
             </div>
           </div>
         </div>

@@ -11,9 +11,7 @@ export default function Home() {
         imageUrl="/images/background.jpg"
         height="500px"
         title="E-Agos"
-        subtitle="Naglalaman ito ng mga impormasyon tungkol sa Naratibong Salaysay ng mga Naninirahan sa Tabi ng Ilog Daet.
-              Magsisilbi ang Website na ito bilang preserbasyon at Magagamit bilang kagamitang pantulong sa pagpapaunlad
-              ng kaalaman."
+        subtitle="E-AGOS” (Elektroniko, Agos, Gabay, Obra, at Sining)"
       />
 
       {/* Overview Section */}

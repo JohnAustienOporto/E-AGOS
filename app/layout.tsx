@@ -23,7 +23,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "E-Agos | Naratibong Salaysay ng mga Naninirahan sa Tabi ng Ilog Daet",
   description:
-    "Naglalaman ito ng mga impormasyon tungkol sa Naratibong Salaysay ng mga Naninirahan sa Tabi ng Ilog Daet. Magsisilbi ang Website na ito bilang preserbasyon at Magagamit bilang kagamitang pantulong sa pagpapaunlad ng kaalaman",
+    "Naglalaman ito ng mga impormasyon tungkol sa mga Naninirahan sa Tabi ng Ilog Daet. Magsisilbi ang Website na ito bilang preserbasyon at Magagamit bilang kagamitang pantulong sa pagpapaunlad ng kaalaman",
   generator: 'v0.dev',
   icons: {
     icon: '/images/icon.png', // Point to your favicon image here

@@ -17,51 +17,53 @@ export default function Mananaliksik() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <div className="mb-12">
-              <h2 className="text-2xl font-bold mb-6 text-darkBlue">Tungkol sa Proyekto</h2>
+              <h2 className="text-2xl font-bold mb-6 text-darkBlue">Tungkol sa Pananaliksik</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <p className="mb-4">
-                    Ang proyektong ito ay nagsimula bilang bahagi ng isang mas malaking inisyatiba para sa
-                    pagdodokumento at pangangalaga ng mga lokal na kultura at tradisyon sa Pilipinas.
+                  Naglalayon ang pananaliksik bilang bahagi ng isang mas malaking inisyatiba para sa kaalaman, preserbasiyon at 
+                  pangangalaga ng mga lokal na Paniniwala, Gawi, at Pamumuhay sa Tabi ng Ilog Daet sa lalawigan ng Camarines Norte
                   </p>
                   <p>
-                    Ang pangunahing layunin ay ang makolekta, mapangalagaan, at maibahagi ang mga kwento, tradisyon, at
-                    kaalaman ng mga naninirahan sa tabi ng Ilog Daet, na maaaring mawala sa paglipas ng panahon kung
-                    hindi idodokumento.
+                  Ang pangunahing layunin nito ang makolekta, mapangalagaan, at maibahagi ang mga kuwento, salaysay, karanasan, at kaalaman ng mga naninirahan sa tabi ng Ilog Daet.
+                  Upang higit na maunawaan at mapahalagahan ang kanilang kultura at magamit ito bilang batayan ng pag-aaral at pagtaguyod sa lokal na identidad o pagkakakilanlan ng Daet.
                   </p>
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image src="/images/ilog-daet-5.png" alt="Proyekto ng Pananaliksik" fill className="object-cover" />
                 </div>
               </div>
-
+              {/* Disenyo ng Pananaliksik Section */}
               <div className="section-divider">
-                <h3 className="text-xl font-bold mb-4 text-darkBlue">Metodolohiya</h3>
-                <p className="mb-4">Ang pananaliksik ay isinagawa gamit ang mga sumusunod na pamamaraan:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    <strong>Pakikipanayam</strong> - Nakipag-usap ang mga mananaliksik sa mga matatanda at iba pang
-                    miyembro ng komunidad upang makolekta ang kanilang mga kwento at karanasan.
-                  </li>
-                  <li>
-                    <strong>Participant Observation</strong> - Nanirahan ang mga mananaliksik sa komunidad para
-                    direktang maobserbahan ang pang-araw-araw na buhay at mga gawain ng mga lokal.
-                  </li>
-                  <li>
-                    <strong>Dokumentasyon</strong> - Kumuha ng mga larawan, video, at audio recording para sa mas
-                    komprehensibong dokumentasyon.
-                  </li>
-                  <li>
-                    <strong>Pagsusuri ng Literatura</strong> - Sinuri ang mga naunang pag-aaral at dokumentasyon tungkol
-                    sa Ilog Daet at mga kalapit na lugar.
-                  </li>
-                </ul>
+                <h3 className="text-xl font-bold mb-4 text-darkBlue">Disenyo ng Pananaliksik</h3>
+                <p className="mb-4">
+                  Ginamit ang kwalitatibong disenyo sa pananaliksik sa pangangalap at pagsusuri ng mga datos na hindi numerikal, na may layuning maunawaan ang mga konsepto, opinyon, at karanasan ng mga tao.
+                </p>
+                <p className="mb-4">
+                  Ginamit din ang mga mananaliksik ng Penomenolohikal na pamamaraan pag-aaral ng karanasan ng tao at ang mga paraan kung paano ang mga bagay nagpapakita sa pamamagitan ng karanasan. Isa ang pag-unawa sa kung paano nararanasan ang mga nangyayari sa paligid. Hindi lamang tungkol sa kung ano ang mga bagay, kung hindi pati na rin kung paano ito nakikita, nararamdaman, at naintindihan.
+                </p>
+                <h4 className="text-lg font-bold mb-2 text-darkBlue">Paraan ng pagpili ng mga impormante</h4>
+                <p className="mb-4">
+                  Ginamit ang sampling na may layunin o Purposive Sampling, isang paraan ng pagpili ng mga kalahok kung saan tinutukoy ang mga indibidwal na may sapat na kaalaman at karanasan upang makapagbigay ng mahalagang impormasyon.
+                </p>
+                <h4 className="text-lg font-bold mb-2 text-darkBlue">Instrumento ng Pananaliksik</h4>
+                <p className="mb-4">
+                  Gagamitin ng mga mananaliksik ang inihandang pamatnubay na tanong para sa Pakikipagkuwentuhan upang makakuha ng mas malalim na kaalaman at karanasan mula sa mga mamamayan.
+                </p>
+                <h4 className="text-lg font-bold mb-2 text-darkBlue">Paraan ng Pangangalap ng Datos</h4>
+                <p className="mb-4">
+                  Isinagawa ang panayam sa pamamagitan ng pangkatang panayam. Pagtitipon ng mga impormante sa isang lugar upang sagutin ang mga katanungang nais linawin.
+                </p>
+                <h4 className="text-lg font-bold mb-2 text-darkBlue">Paraan ng Pagsusuri ng Datos</h4>
+                <p className="mb-4">
+                  Ginamit ang Tematikong Pagsusuri bilang isang sistema ng pagsusuri ng kwalitatibong datos. Sa pamamaraang ito, tutukuyin ng mananaliksik ang mga paulit-ulit na tema o ideya sa mga teksto, tulad ng mga panayam o transkrip.
+                </p>
               </div>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-darkBlue">Ang Aming Grupo</h2>
+              <h2 className="text-2xl font-bold mb-6 text-darkBlue">MGA MANANALIKSIK</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="card">
