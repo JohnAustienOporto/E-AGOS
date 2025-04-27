@@ -1,10 +1,9 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import Image from "next/image"
-import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import type React from "react"
+import { useState } from "react"
 
 interface GalleryImage {
   id: string
@@ -51,7 +50,6 @@ export default function ImageGallery({ images, title, categories }: ImageGallery
     setSelectedImage(filteredImages[newIndex])
   }
 
-  // Handle keyboard navigation
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Escape") {
       closeLightbox()
@@ -94,11 +92,11 @@ export default function ImageGallery({ images, title, categories }: ImageGallery
       )}
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="flex flex-wrap gap-4 justify-center">
         {filteredImages.map((image) => (
           <div
             key={image.id}
-            className="relative aspect-square overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+            className="relative w-[252px] h-[360px] overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() => openLightbox(image)}
           >
             <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />

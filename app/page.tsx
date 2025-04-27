@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       {/* Hero Section with Parallax */}
       <ParallaxHero
-        imageUrl="/images/background.jpg"
+        imageUrl="/images/COVER TAHANAN.png"
         height="500px"
         title="E-Agos"
         subtitle="E-AGOS” (Elektroniko, Agos, Gabay, Obra, at Sining)"
@@ -27,7 +27,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">Paniniwala at Gawi</h3>
               </div>
               <div className="relative h-48">
-                <Image src="/images/penafrancia-image-2.png" alt="Paniniwala at Gawi" fill className="object-cover" />
+                <Image src="/images/TAHANAN PANINIWALA COVER.png" alt="Paniniwala at Gawi" fill className="object-cover" />
               </div>
               <div className="card-body">
                 <p className="mb-4">
@@ -44,7 +44,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">Pamumuhay</h3>
               </div>
               <div className="relative h-48">
-                <Image src="/images/pangingisda.png" alt="Pamumuhay" fill className="object-cover" />
+                <Image src="/images/TAHANAN PAMUMUHAY COVER.png" alt="Pamumuhay" fill className="object-cover" />
               </div>
               <div className="card-body">
                 <p className="mb-4">
@@ -61,7 +61,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-white">Mananaliksik</h3>
               </div>
               <div className="relative h-48">
-                <Image src="/images/ilog-daet-2.png" alt="Mananaliksik" fill className="object-cover" />
+                <Image src="/images/TAHANAN MGA MANANALIKSIK COVER.png" alt="Mananaliksik" fill className="object-cover" />
               </div>
               <div className="card-body">
                 <p className="mb-4">
