@@ -74,9 +74,8 @@ export default function Mananaliksik() {
                   <div className="p-6">
                     <h3 className="text-lg font-bold mb-2 text-darkBlue">Jiane Mae M. Pacleta</h3>
                     <p className="text-sm text-gray-600 mb-4">Mananaliksik</p>
-                    <p className="mb-4">
-                      Nagtrabaho siya bilang mananaliksik sa proyekto ng Ilog Daet, at nagbigay ng mahahalagang kontribusyon sa pangangalap ng mga impormasyon tungkol sa lokal na kultura at pamumuhay.
-                    </p>
+                    <p className="text-xl"> {/* Larger text for readability */}
+                    Si Bb. Jiane Mae M. Pacleta isinilang noong ika-siyam ng Marso, taong 2004 sa bayan ng Daet, Camarines Norte. Dalawampung taong gulang at kasalukuyang naninirahan sa Barangay VIII, bayan ng Daet.  Nakapagtapos ng Elementarya at Sekondaryang Edukasyon sa Moreno Integrated School at Senior Highschool sa Mabini Colleges Inc. Kasalukuyang nasa ikatlong taon ng kolehiyo sa Camarines Norte State College sa kursong Batsilyer sa Edukasyong Pansekondarya Medyor sa Filipino. Kasapi siya sa Kapisanan ng mga Medyor sa Filipino.                    </p>
                   </div>
                 </div>
 
@@ -87,9 +86,8 @@ export default function Mananaliksik() {
                   <div className="p-6">
                     <h3 className="text-lg font-bold mb-2 text-darkBlue">Rica Responde</h3>
                     <p className="text-sm text-gray-600 mb-4">Mananaliksik</p>
-                    <p className="mb-4">
-                      Isa pang mananaliksik na nag-ambag ng malalim na kaalaman sa proyekto. Tinutukan ni Rica ang pagsusuri ng mga lokal na karanasan sa paligid ng Ilog Daet.
-                    </p>
+                    <p className="text-xl"> {/* Larger text for readability */}
+                    Si Bb. Rica B Responde isinilang noong Agosto 23, taong 2003. Dalawamput isang taong gulang at kasalukuyang naninirahan sa Barangay Calabagas San Vicente Camarines Norte.  Nakapagtapos ng Elementarya at Sekondaryang Edukasyon sa V. Orendain Elementary school  at Senior Highschool sa Froilan D. Lopez Highschool. Kasalukuyang nasa ikatlong taon ng kolehiyo sa Camarines Norte State College sa kursong Batsilyer sa Edukasyong Pansekondarya Medyor sa Filipino.                    </p>
                   </div>
                 </div>
               </div>
@@ -110,8 +108,8 @@ export default function Mananaliksik() {
       <p className="mb-4">
         Doktor ng Pilosopiya sa Filipino
       </p>
-      <p className="mb-4">
-        Nagtapos ng kolehiyo sa La Consolacion College-Daet sa kursong Batsilyer sa Pansekondaryang Edukasyon major sa Filipino noong 2005. Nagtapos ng Master of Arts in Education major sa Filipino sa Universidad de Santa Isabel - Lungsod Naga. Nagkamit ng karangalan bilang Magna Cum Laude, pinakamahusay na Tesis at Presenter noong 2016. Nakamit ang titulong Doktor ng Pilosopiya sa Filipino noong 2024 sa Bicol University - Lungsod Legazpi at hinirang na pinakamahusay na disertasyon.
+      <p className="text-xl"> {/* Larger text for readability */}
+      Nagtapos ng kolehiyo sa La Consolacion College-Daet sa kursong Batsilyer sa Pansekondaryang Edukasyon major sa Filipino noong 2005. Nagtapos ng Master of Arts in Education major sa Filipino sa Universidad de Santa Isabel - Lungsod Naga. Nagkamit ng karangalan bilang Magna Cum Laude, pinakamahusay na Tesis at Presenter noong 2016. Nakamit ang titulong Doktor ng Pilosopiya sa Filipino noong 2024 sa Bicol University - Lungsod Legazpi at hinirang na pinakamahusay na disertasyon.
       </p>
     </div>
   </div>

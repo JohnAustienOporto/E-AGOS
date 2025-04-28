@@ -363,205 +363,240 @@ export default function PaniniwalAtGawi() {
                 Paniniwala ng mga Naninirahan sa Tabi ng Ilog Daet
               </h2>
 
-              <div className="grid grid-cols-1 gap-8 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 {/* Card 1: Paniniwala sa Mahal na Ina */}
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="text-xl font-bold text-white">BARANGAY VIII</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div
-                      className="relative h-64 cursor-pointer overflow-hidden"
-                      onClick={() => document.getElementById("open-ina-gallery")?.click()}
-                    >
-                      <Image
-                        src="/images/FGAWI/3.jpg"
-                        alt="Paniniwala sa Mahal na Ina"
-                        fill
-                        className="object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-                        <span className="sr-only">Buksan ang gallery</span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">
-                        Paniniwala sa Mahal na Ina o kay Peñafrancia
-                      </h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Malalim na nakaugat sa puso ng mga mamamayang Bicolano ang debosyon sa Mahal na Ina ng Peñafrancia, lalo na sa mga naninirahan sa mga lugar malapit sa ilog ng Daet. Ang taunang prusisyon at fluvial parade, kung saan isinasakay sa bangka ang imahe ni Ina at pinapadaan sa ilog na isa sa pinakaaabangang bahagi ng kapistahan. Para sa mga naninirahan sa tabing-ilog, ang okasiyong ito hindi lamang relihiyoso kung hindi isang mahalagang bahagi ng kanilang pamumuhay at pagkakakilanlan bilang komunidad.
+                <div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY VIII</h3>
+  </div>
+
+  {/* Image at the top */}
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-ina-gallery")?.click()}
+  >
+    <Image
+      src="/images/FGAWI/3.jpg"
+      alt="Paniniwala sa Mahal na Ina"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
+
+  {/* Text and Button below */}
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">
+      Paniniwala sa Mahal na Ina o kay Peñafrancia
+    </h4>
+    <p className="text-xl">
+    Malalim na nakaugat sa puso ng mga mamamayang Bicolano ang debosyon sa Mahal na Ina ng Peñafrancia, lalo na sa mga naninirahan sa mga lugar malapit sa ilog ng Daet. Ang taunang prusisyon at fluvial parade, kung saan isinasakay sa bangka ang imahe ni Ina at pinapadaan sa ilog na isa sa pinakaaabangang bahagi ng kapistahan. Para sa mga naninirahan sa tabing-ilog, ang okasiyong ito hindi lamang relihiyoso kung hindi isang mahalagang bahagi ng kanilang pamumuhay at pagkakakilanlan bilang komunidad.
 Maraming naniniwala na ang presensiya ng mahal na Ina sa ilog ang nagbibigay ng biyaya sa kanilang kabuhayan, lalo na sa mga mangingisda, magsasaka, at negosyanteng umaasa sa tubig at kalikasan. Pinaniniwalaan din ng ilang matatanda sa lugar na kapag dumaan ang imahe ni Ina sa tapat ng kanilang bahay o lugar ng kabuhayan, pinagpapala sila at pinoprotektahan mula sa sakuna o malas.
+    </p>
 
-                      </p>
-                      
+    <p className="text-xl mt-4">
+    Sa mga barangay na nasa tabing-ilog ng Daet, may matibay na paniniwala na ang mga lalaki lamang ang dapat magbuhat sa imahen ni Ina tuwing prusisyon, lalo na sa bahagi ng fluvial procession. Ayon sa kanila, na ang mga lalaki kinakailangan na may sapat na lakas at tapang upang maitaguyod at maisagawa nang maayos ang pagbubuhat, lalo na sa bahagi ng ilog kung saan kailangan ng balanse, koordinasyon, at pisikal na tibay.
+Ang pagbubuhat kay Ina ay panata ng mga lalaki bilang alay sa pamilya at komunidad. Ipinapakita rito ang pananampalataya, pagkakaisa, at debosiyon na naipapasa sa bawat henerasiyon bilang bahagi ng kanilang kultura.
+    </p>
 
-                <p className="text-xl"> {/* Larger text for readability */}
-                Sa mga barangay na nasa tabing-ilog ng Daet, may matibay na paniniwala na ang mga lalaki lamang ang dapat magbuhat sa imahen ni Ina tuwing prusisyon, lalo na sa bahagi ng fluvial procession. Ayon sa kanila, na ang mga lalaki kinakailangan na may sapat na lakas at tapang upang maitaguyod at maisagawa nang maayos ang pagbubuhat, lalo na sa bahagi ng ilog kung saan kailangan ng balanse, koordinasyon, at pisikal na tibay.
-                Ang pagbubuhat kay Ina ay panata ng mga lalaki bilang alay sa pamilya at komunidad. Ipinapakita rito ang pananampalataya, pagkakaisa, at debosiyon na naipapasa sa bawat henerasiyon bilang bahagi ng kanilang kultura.
-                      </p>
+    <button
+      id="open-ina-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
+    >
+      <GalleryButton
+        images={paniniwalaSaInaImages}
+        label="Tingnan ang mga imahe ng Paniniwala sa Mahal na Ina"
+      />
+    </button>
+  </div>
+</div>
 
-                      <button
-                        id="open-ina-gallery"
-                        className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
-                      >
-                        <GalleryButton
-                          images={paniniwalaSaInaImages}
-                          label="Tingnan ang mga imahe ng Paniniwala sa Mahal na Ina"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY IV</h3>
+  </div>
 
-                {/* Card 2: Paniniwala sa Pagsunog ng Puno */}
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="text-xl font-bold text-white">BARANGAY IV</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div
-                      className="relative h-64 cursor-pointer overflow-hidden"
-                      onClick={() => document.getElementById("open-puno-gallery")?.click()}
-                    >
-                      <Image
-                        src="/images/FGAWI/Paniniwala sa Pagsunog ng puno sa tabi ng ilog.jpg"
-                        alt="Paniniwala sa Pagsunog ng puno sa tabi ng ilog"
-                        fill
-                        className="object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-                        <span className="sr-only">Buksan ang gallery</span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">
-                        Paniniwala sa Pagsunog ng puno sa tabi ng ilog
-                      </h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Sa mga pamayanang malapit sa tabing-ilog ng Daet, laganap ang paniniwalang sagrado ang mga punong kahoy sa gilid ng ilog dahil pinaniniwalaang tirahan ito ng mga ispiritu o lamang-lupa. Ang pagsunog sa mga punong ito itinuturing na paglabag sa kagandahang-loob ng kalikasan at maaaring magdulot ng ganti mula sa mga ispiritu, gaya ng hindi maipaliwanag na pagkakaroon sakit at sugat. Marami sa mga naninirahan ang pinaniniwalaan ito na patuloy na nagpapalalim sa respeto nila sa kalikasan at sa mga nilalang na hindi nakikita.                      </p>
+  {/* Image at the top */}
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-puno-gallery")?.click()}
+  >
+    <Image
+      src="/images/FGAWI/Paniniwala sa Pagsunog ng puno sa tabi ng ilog.jpg"
+      alt="Paniniwala sa Pagsunog ng puno sa tabi ng ilog"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
 
-                      <button
-                        id="open-puno-gallery"
-                        className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
-                      >
-                        <GalleryButton
-                          images={pagsunosPunoImages}
-                          label="Tingnan ang imahe ng Paniniwala sa Pagsunog ng Puno"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+  {/* Text and Button below */}
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">
+      Paniniwala sa Pagsunog ng puno sa tabi ng ilog
+    </h4>
+    <p className="text-xl">
+      Sa mga pamayanang malapit sa tabing-ilog ng Daet, laganap ang paniniwalang
+      sagrado ang mga punong kahoy sa gilid ng ilog dahil pinaniniwalaang tirahan
+      ito ng mga ispiritu o lamang-lupa. Ang pagsunog sa mga punong ito ay itinuturing
+      na paglabag sa kagandahang-loob ng kalikasan at maaaring magdulot ng ganti mula
+      sa mga ispiritu, gaya ng hindi maipaliwanag na pagkakaroon ng sakit at sugat.
+      Marami sa mga naninirahan ang pinaniniwalaan ito na patuloy na nagpapalalim sa
+      respeto nila sa kalikasan at sa mga nilalang na hindi nakikita.
+    </p>
 
-                {/* Card 3: Paniniwala sa Maligno */}
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="text-xl font-bold text-white">BARANGAY I, IV, VIII, at San Isidro</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div
-                      className="relative h-64 cursor-pointer overflow-hidden"
-                      onClick={() => document.getElementById("open-maligno-gallery")?.click()}
-                    >
-                      <Image
-                        src="/images/FGAWI/Paniniwala sa Maligno 3.jpg"
-                        alt="May maligno o taong hindi nakikita"
-                        fill
-                        className="object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-                        <span className="sr-only">Buksan ang gallery</span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">May maligno o taong hindi nakikita</h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Sa mga pamayanang malapit sa tabing-ilog ng Daet, laganap ang paniniwala sa mga nilalang na hindi basta-bastang nakikitang mga ispiritu, engkanto, o maligno na sinasabing nagbabantay sa kalikasan, lalo na sa ilog at kagubatan. Ayon sa mga matatanda, may mga lugar na “bawal gambalain” dahil tirahan ito ng mga nilalang na hindi mula sa mundong ito. Minsan, may mga taong bigla na lang nagkakasakit, naliligaw kahit pamilyar sa lugar, o nakakaramdam ng mabigat na presensya. Kapag ganito, sinasabi nilang baka “naalihan” o “naabala” ang espiritu. Upang makaiwas, marami ang sumusunod sa pamahiin tulad ng paghingi muna ng pahintulot bago pumasok sa masukal na lugar, o kaya’y pag-iwas sa malakas na pagtawa o ingay kapag gabi sa tabi ng ilog.
-                      </p>
+    <button
+      id="open-puno-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
+    >
+      <GalleryButton
+        images={pagsunosPunoImages}
+        label="Tingnan ang imahe ng Paniniwala sa Pagsunog ng Puno"
+      />
+    </button>
+  </div>
+</div>
 
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">Maraming nagagalawan</h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Dahil sa malapit sila sa kalikasan, sensitibo ang mga taga-tabing-ilog sa mga biglaang pagbabago sa paligid. Kapag may sunod-sunod na pagkakasakit o kakaibang pangyayari, gaya ng pagbaha kahit walang ulan o pagkalat ng mga insekto, iniisip ng ilan na may galit na espiritu sa lugar. Naniniwala sila na ang mga espiritu ng kalikasan na may kakayahang “gumanti” kung naistorbo o hindi sila nirerespeto. May mga kuwento pa ngang kapag may bagong tayong bahay malapit sa ilog, kailangan munang “makiusap” sa pamamagitan ng dasal o alay upang hindi magdulot ng sakit sa mga maninirahan.
-                      </p>
 
-                      <button
-                        id="open-maligno-gallery"
-                        className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
-                      >
-                        <GalleryButton images={malignoImages} label="Tingnan ang mga imahe ng Paniniwala sa Maligno" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY I, IV, VIII, at San Isidro</h3>
+  </div>
 
-                {/* Card 4: Paniniwala sa Arima at Ipo-ipo */}
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="text-xl font-bold text-white">BARANGAY III AT IV</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="grid grid-cols-2 gap-2 h-64">
-                      <div
-                        className="relative cursor-pointer overflow-hidden"
-                        onClick={() => document.getElementById("open-arima-gallery")?.click()}
-                      >
-                        <Image
-                          src="/images/FGAWI/Arima o Bolang Kristal 2.jpg"
-                          alt="Arima o bolang kristal"
-                          fill
-                          className="object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-                          <span className="sr-only">Buksan ang gallery ng Arima</span>
-                        </div>
-                      </div>
-                      <div
-                        className="relative cursor-pointer overflow-hidden"
-                        onClick={() => document.getElementById("open-ipoipo-gallery")?.click()}
-                      >
-                        <Image
-                          src="/images/FGAWI/May nanghihila sa ilalim ng tubig o sinasabi na ipo-ipo 2.jpg"
-                          alt="Ipo-ipo sa tubig"
-                          fill
-                          className="object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
-                          <span className="sr-only">Buksan ang gallery ng Ipo-ipo</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">Arima o bolang kristal</h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Ang Santelmo, mula sa salitang Kastila na "San Elmo’s Fire", isang kakaibang liwanag o bolang apoy na karaniwang lumilitaw sa gabi, lalo na sa mga liblib na lugar tulad ng ilog, lawa, o bangin. Sa Daet, partikular na sa mga pamayanang nasa tabing-ilog, may mga kuwento ng mga mangingisdang nakakakita ng bolang nagliliyab na lumulutang sa hangin o dumadapo sa ibabaw ng tubig. Bagamat nakakatakot ito, may mga pagkakataong nagsisilbi itong gabay kung saan masagana ang huli at sinasabi ng Santelmo kung saan maraming isda.
-Ngunit sa kabila ng magandang dulot nito sa ilang mangingisda, ang karamihan nananatiling takot sa Santelmo. Pinaniniwalaan kasing ito ang kaluluwa ng isang taong hindi matahimik, o isang ispiritung naglalagalag, na maaaring magdala ng masama kapag nilapitan o sinundan. May mga sabi-sabi pa na kapag masyado kang nakatitig o sinubukang habulin ang bolang apoy, maaari kang maligaw, mawala sa sarili, o hindi na makabalik sa pampang.
+  {/* Image at the top */}
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-maligno-gallery")?.click()}
+  >
+    <Image
+      src="/images/FGAWI/Paniniwala sa Maligno 3.jpg"
+      alt="May maligno o taong hindi nakikita"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery</span>
+    </div>
+  </div>
 
-                      </p>
-                      <button
-                        id="open-arima-gallery"
-                        className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mb-4"
-                      >
-                        <GalleryButton images={arimaImages} label="Tingnan ang mga imahe ng Arima" />
-                      </button>
+  {/* Text and Button below */}
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">May maligno o taong hindi nakikita</h4>
+    <p className="text-xl">
+      Sa mga pamayanang malapit sa tabing-ilog ng Daet, laganap ang paniniwala sa mga nilalang
+      na hindi basta-bastang nakikitang mga ispiritu, engkanto, o maligno na sinasabing nagbabantay
+      sa kalikasan, lalo na sa ilog at kagubatan. Ayon sa mga matatanda, may mga lugar na
+      “bawal gambalain” dahil tirahan ito ng mga nilalang na hindi mula sa mundong ito. Minsan,
+      may mga taong bigla na lang nagkakasakit, naliligaw kahit pamilyar sa lugar, o nakakaramdam
+      ng mabigat na presensya. Kapag ganito, sinasabi nilang baka “naalihan” o “naabala” ang espiritu.
+      Upang makaiwas, marami ang sumusunod sa pamahiin tulad ng paghingi muna ng pahintulot bago pumasok
+      sa masukal na lugar, o kaya’y pag-iwas sa malakas na pagtawa o ingay kapag gabi sa tabi ng ilog.
+    </p>
 
-                      <h4 className="text-lg font-bold mb-2 text-darkBlue">
-                        May nanghihila sa ilalim ng tubig o sinasabi na ipo-ipo
-                      </h4>
-                      <p className="text-xl"> {/* Larger text for readability */}
-                      Isang paniniwala na may mga hindi nakikitang puwersa o nilalang sa ilalim ng tubig tulad ng mga engkanto, lamang-lupa, o espiritu ng kalikasan na nanghihila ng mga tao pababa, lalo na sa malalim o matahimik na bahagi ng ilog. Kadalasan, iniuugnay sa biglaang pagkalunod o pagkawala ng isang tao sa gitna ng tubig, kahit siya'y magaling lumangoy.
-Madalas itong ginagamit bilang babala sa mga bata at kabataang mahilig magbabad sa tubig, lalo na sa mga lugar na may kasaysayan ng aksidente. May mga kuwento pa nga na kung hindi ka magpapaalam o magpapausog bago pumasok sa ilog, maaari kang hilahin ng "nakatirang ispiritu" roon.
-Ang "ipo-ipo" naman tinutukoy din minsan bilang isang anyo ng engkanto o masamang elemento na umiikot at gumagawa ng malalakas na alon sa ilalim ng tubig, na tila ba may sariling isip. 
+    <h4 className="text-lg font-bold mb-2 text-darkBlue mt-6">Maraming nagagalawan</h4>
+    <p className="text-xl">
+      Dahil sa malapit sila sa kalikasan, sensitibo ang mga taga-tabing-ilog sa mga biglaang pagbabago
+      sa paligid. Kapag may sunod-sunod na pagkakasakit o kakaibang pangyayari, gaya ng pagbaha kahit
+      walang ulan o pagkalat ng mga insekto, iniisip ng ilan na may galit na espiritu sa lugar. Naniniwala
+      sila na ang mga espiritu ng kalikasan na may kakayahang “gumanti” kung naistorbo o hindi sila
+      nirerespeto. May mga kuwento pa ngang kapag may bagong tayong bahay malapit sa ilog, kailangan
+      munang “makiusap” sa pamamagitan ng dasal o alay upang hindi magdulot ng sakit sa mga maninirahan.
+    </p>
 
-                      </p>
-                      <button
-                        id="open-ipoipo-gallery"
-                        className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors"
-                      >
-                        <GalleryButton images={ipoipoImages} label="Tingnan ang mga imahe ng Ipo-ipo" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+    <button
+      id="open-maligno-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-4"
+    >
+      <GalleryButton images={malignoImages} label="Tingnan ang mga imahe ng Paniniwala sa Maligno" />
+    </button>
+  </div>
+</div>
+
+{/* Card 4A: Arima o Bolang Kristal */}
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY III AT IV</h3>
+  </div>
+
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-arima-gallery")?.click()}
+  >
+    <Image
+      src="/images/FGAWI/Arima o Bolang Kristal 2.jpg"
+      alt="Arima o bolang kristal"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery ng Arima</span>
+    </div>
+  </div>
+
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">Arima o bolang kristal</h4>
+    <p className="text-xl">
+      Ang Santelmo, mula sa salitang Kastila na "San Elmo’s Fire", ay isang kakaibang liwanag o bolang apoy
+      na lumilitaw sa gabi, lalo na sa mga ilog, lawa, o bangin. Sa Daet, may mga kuwento ng mga mangingisdang
+      nakakakita ng bolang apoy na lumulutang sa hangin o tubig. Bagama’t ito’y gabay sa huli ng isda, marami
+      pa rin ang takot dito dahil pinaniniwalaang espiritu ito ng isang taong hindi matahimik.
+    </p>
+
+    <button
+      id="open-arima-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={arimaImages} label="Tingnan ang mga imahe ng Arima" />
+    </button>
+  </div>
+</div>
+
+{/* Card 4B: May Nanghihila sa Ilalim ng Tubig (Ipo-ipo) */}
+<div className="card h-full">
+  <div className="card-header">
+    <h3 className="text-xl font-bold text-white">BARANGAY III AT IV</h3>
+  </div>
+
+  <div
+    className="relative h-64 cursor-pointer overflow-hidden"
+    onClick={() => document.getElementById("open-ipoipo-gallery")?.click()}
+  >
+    <Image
+      src="/images/FGAWI/May nanghihila sa ilalim ng tubig o sinasabi na ipo-ipo 2.jpg"
+      alt="Ipo-ipo sa tubig"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-darkBlue bg-opacity-20 hover:bg-opacity-10 transition-all flex items-center justify-center">
+      <span className="sr-only">Buksan ang gallery ng Ipo-ipo</span>
+    </div>
+  </div>
+
+  <div className="p-6">
+    <h4 className="text-lg font-bold mb-2 text-darkBlue">May nanghihila sa ilalim ng tubig o sinasabi na ipo-ipo</h4>
+    <p className="text-xl">
+      Pinaniniwalaan sa mga pamayanang tabing-ilog ng Daet na may mga engkanto o espiritu sa ilalim ng tubig
+      na nanghihila sa mga tao. Kadalasan itong inuugnay sa biglaang pagkalunod o pagkawala sa ilog, kahit ang
+      biktima ay mahusay lumangoy. Madalas itong ginagamit bilang babala sa mga kabataan upang mag-ingat sa
+      malalalim at matahimik na bahagi ng ilog.
+    </p>
+
+    <button
+      id="open-ipoipo-gallery"
+      className="flex items-center gap-2 text-teal hover:text-tealDark transition-colors mt-2"
+    >
+      <GalleryButton images={ipoipoImages} label="Tingnan ang mga imahe ng Ipo-ipo" />
+    </button>
+  </div>
+</div>
+
+
+
+
               </div>
             </div>
 

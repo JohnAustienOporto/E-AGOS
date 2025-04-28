@@ -53,7 +53,7 @@ export default function Pamumuhay() {
                   </div>
                   <div className="relative h-64">
                     <Image
-                      src="/images/FPamumuhay/pagbubuhangin 1.jpg"
+                      src="/images/FPamumuhay/Pagbubuhangin 1.jpg"
                       alt="Pagbubuhangin sa Ilog Daet"
                       fill
                       className="object-cover"
@@ -87,7 +87,7 @@ export default function Pamumuhay() {
                   </div>
                   <div className="relative h-64">
                     <Image
-                      src="/images/FPamumuhay/pagtatanim ng palay.jpg"
+                      src="/images/FPamumuhay/Pagtatanim ng palay.jpg"
                       alt="Pagtatanim ng Palay sa tabi ng Ilog Daet"
                       fill
                       className="object-cover"
@@ -217,7 +217,7 @@ export default function Pamumuhay() {
                     <h3 className="text-xl font-bold text-white">Pag-aalaga ng Baboy</h3>
                   </div>
                   <div className="relative h-64">
-                    <Image src="/images/FPamumuhay/Pag-aalaga ng Baboy.jpg" alt="Pag-aalaga ng Baboy" fill className="object-cover" />
+                    <Image src="/images/FPamumuhay/pag-aalaga ng baboy.jpg" alt="Pag-aalaga ng Baboy" fill className="object-cover" />
                   </div>
                   <div className="p-6">
                   <p className="text-xl"> {/* Larger text for readability */}
@@ -252,7 +252,7 @@ export default function Pamumuhay() {
                   </div>
                   <div className="relative h-64">
                     <Image
-                      src="/images/PAGAWAAN NG HOLLOW BLOCKS .jpg"
+                      src="/images/FPamumuhay/Pagawaan.jpg"
                       alt="Pagawaan ng Hollow Blocks"
                       fill
                       className="object-cover"
