@@ -87,7 +87,7 @@ export default function Pamumuhay() {
                   </div>
                   <div className="relative h-64">
                     <Image
-                      src="/images/FPamumuhay/Pagtatanim ng palay.jpg"
+                      src="/images/FPamumuhay/Pagtatanim ng Palay.jpg"
                       alt="Pagtatanim ng Palay sa tabi ng Ilog Daet"
                       fill
                       className="object-cover"
